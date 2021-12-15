@@ -1,3 +1,6 @@
+const button = document.getElementById('blast')
+button.addEventListener('click', getValue)
+
 //======================================//
 //Fighter A //
 
@@ -27,10 +30,6 @@ function getValue() {
     let primeAgeA = Number((agedifA * 0.175).toFixed(2));
     let primeAgeB = Number((agedifB * 0.175).toFixed(2));
 
-
-
-
-
     //Get Activeness
     let activeA = document.getElementById('active').value
     let num7 = Number((activeA * 0.125).toFixed(2))
@@ -46,11 +45,8 @@ function getValue() {
     let num10 = +grapA
     let num11 = ((num9 + num10) * 0.15)
 
-
     //Get total points for fighter A
     let totalA = Number(num1 + winpercentage + streakPercentage + num7 + num11 + primeAgeA + numReachA);
-
-
 
     //=================================//
     //Fighter B
@@ -73,7 +69,6 @@ function getValue() {
     let num16 = +streakB
     let streakPercentageB = Number((num16 * 0.125).toFixed(2));
 
-
     //Get Activeness
     let activeB = document.getElementById('activeB').value
     let num18 = Number((activeB * 0.125).toFixed(2));
@@ -89,10 +84,8 @@ function getValue() {
     let num21 = +grapB
     let num22 = ((num20 + num21) * 0.15);
 
-
     //Get total points for fighter B
     let totalB = Number(num12 + winpercentageB + streakPercentageB + num18 + num22 + primeAgeB + numReachB);
-
 
     //Grandtotal add both fighters scores together
     let totalX = totalA + totalB;
@@ -108,5 +101,28 @@ function getValue() {
     //Show total points
     document.querySelector('.bestline').innerHTML = lineX;
     document.querySelector('.bestlineB').innerHTML = lineY;
+
+    //Show Percentage
+    let percentageA = document.querySelector('.percentageA')
+    let percentageB = document.querySelector('.percentageB')
+
+    let P1 = (1 / lineX) * 100
+    let P2 = (1 / lineY) * 100
+
+    percentageA.innerHTML = P1.toFixed(2) + '%'
+    percentageB.innerHTML = P2.toFixed(2) + '%'
+
+    if (P1 > P2) {
+        document.getElementById('smallA').innerHTML = "Winner"
+        percentageA.classList.add('green')
+        percentageB.classList.add('red')
+        document.getElementById('smallB').innerHTML = "Loser"
+
+    } else if (P2 > P1) {
+        document.getElementById('smallA').innerHTML = "Loser"
+        document.getElementById('smallB').innerHTML = "Winner"
+        percentageA.classList.add('red')
+        percentageB.classList.add('green')
+    }
 }
 
