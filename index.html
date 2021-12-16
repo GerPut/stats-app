@@ -10,213 +10,217 @@
 </head>
 
 <body>
-    <img class="image" src="ufc.png" alt="">
-    <p class="subheading">LINEBENDER</p>
-    <div class="container">
-        <div class="inner-container">
-            <div class="criteria">
-                <p>Fighter A</p>
-                <form action="" class="contents">
-                    <label>Age A</label>
-                    <select id="agedifAA">
-                        <option value="" disabled selected>...</option>
-                        <option value="7">-16 Younger</option>
-                        <option value="6.6">-14-15 Younger</option>
-                        <option value="6.5">-12-13 Younger</option>
-                        <option value="6.4">-11 Younger</option>
-                        <option value="6.2">-10 Younger</option>
-                        <option value="6.1">-9 Younger</option>
-                        <option value="5.8">-8 Younger</option>
-                        <option value="5.7">-7 Younger</option>
-                        <option value="5.7">-6 Younger</option>
-                        <option value="5.6">-5 Younger</option>
-                        <option value="5.5">-4 Younger</option>
-                        <option value="5.4">-3 Younger</option>
-                        <option value="5.3">-2 Younger</option>
-                        <option value="5.2">-1 Younger</option>
-                        <option value="5">0 Equal</option>
-                        <option value="4.6">+1 Older</option>
-                        <option value="4.5">+2 Older</option>
-                        <option value="4.4">+3 Older</option>
-                        <option value="4.3">+4 Older</option>
-                        <option value="4.1">+5 Older</option>
-                        <option value="4.1">+6 Older</option>
-                        <option value="4.1">+7 Older</option>
-                        <option value="4">+8 Older</option>
-                        <option value="3.8">+9 Older</option>
-                        <option value="3.7">+10 Older</option>
-                        <option value="3.6">+11 Older</option>
-                        <option value="3.5">+12-13 Older</option>
-                        <option value="3.4">+14-15 Older</option>
-                        <option value="3">+16 Older</option>
-                    </select>
-                    <label for="">Total Fights</label>
-                    <select id="fights">
-                        <option value="" disabled selected>...</option>
-                        <option value="1">1-5</option>
-                        <option value="2">6-10</option>
-                        <option value="4">11-15</option>
-                        <option value="6">15-20</option>
-                        <option value="8">20-25</option>
-                        <option value="10">26+</option>
-                    </select>
-                    <label>Wins</label>
-                    <input id="wins" type="number">
-                    <label>Losses</label>
-                    <input id="losses" type="number">
-                    <label>Last 3 Fight Streak</label>
-                    <select id="streak">
-                        <option value="" disabled selected>...</option>
-                        <option value="2">L L L</option>
-                        <option value="5">L L W</option>
-                        <option value="5.5">L W L</option>
-                        <option value="7">L W W</option>
-                        <option value="6">W L L</option>
-                        <option value="7.5">W L W</option>
-                        <option value="8">W W L</option>
-                        <option value="10">W W W</option>
-                    </select>
-                    <!-- PrimeAGE -->
-                    <!-- Primeage End -->
-                    <label>Last time active</label>
-                    <select id="active">
-                        <option value="" disabled selected>...</option>
-                        <option value="10">0-4 months</option>
-                        <option value="8.5">5-7 months</option>
-                        <option value="7">8-10 months</option>
-                        <option value="4">11-13 months</option>
-                        <option value="3">14 months +</option>
-                    </select>
-                    <label>Reach</label>
-                    <select id="reach">
-                        <option value="" disabled selected>...</option>
-                        <option value="6">9"+ Advantage</option>
-                        <option value="5.8">7-8" Advantage</option>
-                        <option value="5.6">5-6" Advantage</option>
-                        <option value="5.4">3-4" Advantage</option>
-                        <option value="5.1">0-2" Advantage</option>
-                        <option value="5">Equal</option>
-                        <option value="4.9">0-2" Disadvantage</option>
-                        <option value="4.6">3-4" Disadvantage</option>
-                        <option value="4.4">5-6" Disadvantage</option>
-                        <option value="4.2">7-8" Disadvantage</option>
-                        <option value="4">9"+ Disadvantage</option>
-                    </select>
-                    <label>Striking Accuracy</label>
-                    <input id="strike" type="number">
-                    <label>Takedown Accuracy</label>
-                    <input id="grap" type="number">
-                    <p>Best Odds A</p>
-                    <div class="bestline"></div>
-                    <div class="percentageA"></div>
-                    <small id="smallA"></small>
-                </form>
+    <header class="mainheader">
+        <img class="image" src="ufc.png" alt="">
+        <p class="subheading">LINEBENDER</p>
+        <div class="container">
+            <div class="inner-container">
+                <div class="criteria">
+                    <p>Athlete A</p>
+                    <form action="" class="contents">
+                        <label>Age A</label>
+                        <select id="agedifAA">
+                            <option value="" disabled selected>...</option>
+                            <option value="7">-16 Younger</option>
+                            <option value="6.6">-14-15 Younger</option>
+                            <option value="6.5">-12-13 Younger</option>
+                            <option value="6.4">-11 Younger</option>
+                            <option value="6.2">-10 Younger</option>
+                            <option value="6.1">-9 Younger</option>
+                            <option value="5.8">-8 Younger</option>
+                            <option value="5.7">-7 Younger</option>
+                            <option value="5.7">-6 Younger</option>
+                            <option value="5.6">-5 Younger</option>
+                            <option value="5.5">-4 Younger</option>
+                            <option value="5.4">-3 Younger</option>
+                            <option value="5.3">-2 Younger</option>
+                            <option value="5.2">-1 Younger</option>
+                            <option value="5">0 Equal</option>
+                            <option value="4.6">+1 Older</option>
+                            <option value="4.5">+2 Older</option>
+                            <option value="4.4">+3 Older</option>
+                            <option value="4.3">+4 Older</option>
+                            <option value="4.1">+5 Older</option>
+                            <option value="4.1">+6 Older</option>
+                            <option value="4.1">+7 Older</option>
+                            <option value="4">+8 Older</option>
+                            <option value="3.8">+9 Older</option>
+                            <option value="3.7">+10 Older</option>
+                            <option value="3.6">+11 Older</option>
+                            <option value="3.5">+12-13 Older</option>
+                            <option value="3.4">+14-15 Older</option>
+                            <option value="3">+16 Older</option>
+                        </select>
+                        <label for="">Total Fights</label>
+                        <select id="fights">
+                            <option value="" disabled selected>...</option>
+                            <option value="1">1-5</option>
+                            <option value="2">6-10</option>
+                            <option value="4">11-15</option>
+                            <option value="6">15-20</option>
+                            <option value="8">20-25</option>
+                            <option value="10">26+</option>
+                        </select>
+                        <label>Wins</label>
+                        <input id="wins" type="number">
+                        <label>Losses</label>
+                        <input id="losses" type="number">
+                        <label>Last 3 Fight Streak</label>
+                        <select id="streak">
+                            <option value="" disabled selected>...</option>
+                            <option value="2">L L L</option>
+                            <option value="5">L L W</option>
+                            <option value="5.5">L W L</option>
+                            <option value="7">L W W</option>
+                            <option value="6">W L L</option>
+                            <option value="7.5">W L W</option>
+                            <option value="8">W W L</option>
+                            <option value="10">W W W</option>
+                        </select>
+                        <!-- PrimeAGE -->
+                        <!-- Primeage End -->
+                        <label>Last time active</label>
+                        <select id="active">
+                            <option value="" disabled selected>...</option>
+                            <option value="10">0-4 months</option>
+                            <option value="8.5">5-7 months</option>
+                            <option value="7">8-10 months</option>
+                            <option value="4">11-13 months</option>
+                            <option value="3">14 months +</option>
+                        </select>
+                        <label>Reach</label>
+                        <select id="reach">
+                            <option value="" disabled selected>...</option>
+                            <option value="6">9"+ Advantage</option>
+                            <option value="5.8">7-8" Advantage</option>
+                            <option value="5.6">5-6" Advantage</option>
+                            <option value="5.4">3-4" Advantage</option>
+                            <option value="5.1">0-2" Advantage</option>
+                            <option value="5">Equal</option>
+                            <option value="4.9">0-2" Disadvantage</option>
+                            <option value="4.6">3-4" Disadvantage</option>
+                            <option value="4.4">5-6" Disadvantage</option>
+                            <option value="4.2">7-8" Disadvantage</option>
+                            <option value="4">9"+ Disadvantage</option>
+                        </select>
+                        <label>Striking Accuracy</label>
+                        <input id="strike" type="number">
+                        <label>Takedown Accuracy</label>
+                        <input id="grap" type="number">
+                        <p>Best Odds A</p>
+                        <div class="bestline"></div>
+                        <div class="percentageA"></div>
+                        <small id="smallA"></small>
+                    </form>
+                </div>
+                <div class="vl">
+                </div>
+                <div class="criteria">
+                    <p style="color: #04168B">Athlete B</p>
+                    <form action="" class="contents">
+                        <label>Age B</label>
+                        <select id="agedifBB">
+                            <option value="" disabled selected>...</option>
+                            <option value="7">-16 Younger</option>
+                            <option value="6.6">-14-15 Younger</option>
+                            <option value="6.5">-12-13 Younger</option>
+                            <option value="6.4">-11 Younger</option>
+                            <option value="6.2">-10 Younger</option>
+                            <option value="6.1">-9 Younger</option>
+                            <option value="5.8">-8 Younger</option>
+                            <option value="5.7">-7 Younger</option>
+                            <option value="5.7">-6 Younger</option>
+                            <option value="5.6">-5 Younger</option>
+                            <option value="5.5">-4 Younger</option>
+                            <option value="5.4">-3 Younger</option>
+                            <option value="5.3">-2 Younger</option>
+                            <option value="5.2">-1 Younger</option>
+                            <option value="5">0 Equal</option>
+                            <option value="4.6">+1 Older</option>
+                            <option value="4.5">+2 Older</option>
+                            <option value="4.4">+3 Older</option>
+                            <option value="4.3">+4 Older</option>
+                            <option value="4.1">+5 Older</option>
+                            <option value="4.1">+6 Older</option>
+                            <option value="4.1">+7 Older</option>
+                            <option value="4">+8 Older</option>
+                            <option value="3.8">+9 Older</option>
+                            <option value="3.7">+10 Older</option>
+                            <option value="3.6">+11 Older</option>
+                            <option value="3.5">+12-13 Older</option>
+                            <option value="3.4">+14-15 Older</option>
+                            <option value="3">+16 Older</option>
+                        </select>
+                        <label for="">Total Fights</label>
+                        <select id="fightsB">
+                            <option value="" disabled selected>...</option>
+                            <option value="1">1-5</option>
+                            <option value="2">6-10</option>
+                            <option value="4">11-15</option>
+                            <option value="6">15-20</option>
+                            <option value="8">20-25</option>
+                            <option value="10">26+</option>
+                        </select>
+                        <label>Wins</label>
+                        <input id="winsB" type="number">
+                        <label>Losses</label>
+                        <input id="lossesB" type="number">
+                        <label>Last 3 Fight Streak</label>
+                        <select id="streakB">
+                            <option value="" disabled selected>...</option>
+                            <option value="2">L L L</option>
+                            <option value="5">L L W</option>
+                            <option value="5.5">L W L</option>
+                            <option value="7">L W W</option>
+                            <option value="6">W L L</option>
+                            <option value="7.5">W L W</option>
+                            <option value="8">W W L</option>
+                            <option value="10">W W W</option>
+                        </select>
+                        <!-- PrimeAGE -->
+                        <!-- Primeage End -->
+                        <label>Last time active</label>
+                        <select id="activeB">
+                            <option value="" disabled selected>...</option>
+                            <option value="10">0-4 months</option>
+                            <option value="8.5">5-7 months</option>
+                            <option value="7">8-10 months</option>
+                            <option value="4">11-13 months</option>
+                            <option value="3">14 months +</option>
+                        </select>
+                        <label>Reach</label>
+                        <select id="reachB">
+                            <option value="" disabled selected>...</option>
+                            <option value="6">9"+ Advantage</option>
+                            <option value="5.8">7-8" Advantage</option>
+                            <option value="5.6">5-6" Advantage</option>
+                            <option value="5.4">3-4" Advantage</option>
+                            <option value="5.1">0-2" Advantage</option>
+                            <option value="5">Equal</option>
+                            <option value="4.9">0-2" Disadvantage</option>
+                            <option value="4.6">3-4" Disadvantage</option>
+                            <option value="4.4">5-6" Disadvantage</option>
+                            <option value="4.2">7-8" Disadvantage</option>
+                            <option value="4">9"+ Disadvantage</option>
+                        </select>
+                        <label>Striking Accuracy</label>
+                        <input id="strikeB" type="number">
+                        <label>Takedown Accuracy</label>
+                        <input id="grapB" type="number">
+                        <p style="color: #04168B">Best Odds B</p>
+                        <div class="bestlineB"></div>
+                        <div class="percentageB"></div>
+                        <small id="smallB"></small>
+                    </form>
+                </div>
             </div>
-            <div class="vl">
-            </div>
-            <div class="criteria">
-                <p>Fighter B</p>
-                <form action="" class="contents">
-                    <label>Age B</label>
-                    <select id="agedifBB">
-                        <option value="" disabled selected>...</option>
-                        <option value="7">-16 Younger</option>
-                        <option value="6.6">-14-15 Younger</option>
-                        <option value="6.5">-12-13 Younger</option>
-                        <option value="6.4">-11 Younger</option>
-                        <option value="6.2">-10 Younger</option>
-                        <option value="6.1">-9 Younger</option>
-                        <option value="5.8">-8 Younger</option>
-                        <option value="5.7">-7 Younger</option>
-                        <option value="5.7">-6 Younger</option>
-                        <option value="5.6">-5 Younger</option>
-                        <option value="5.5">-4 Younger</option>
-                        <option value="5.4">-3 Younger</option>
-                        <option value="5.3">-2 Younger</option>
-                        <option value="5.2">-1 Younger</option>
-                        <option value="5">0 Equal</option>
-                        <option value="4.6">+1 Older</option>
-                        <option value="4.5">+2 Older</option>
-                        <option value="4.4">+3 Older</option>
-                        <option value="4.3">+4 Older</option>
-                        <option value="4.1">+5 Older</option>
-                        <option value="4.1">+6 Older</option>
-                        <option value="4.1">+7 Older</option>
-                        <option value="4">+8 Older</option>
-                        <option value="3.8">+9 Older</option>
-                        <option value="3.7">+10 Older</option>
-                        <option value="3.6">+11 Older</option>
-                        <option value="3.5">+12-13 Older</option>
-                        <option value="3.4">+14-15 Older</option>
-                        <option value="3">+16 Older</option>
-                    </select>
-                    <label for="">Total Fights</label>
-                    <select id="fightsB">
-                        <option value="" disabled selected>...</option>
-                        <option value="1">1-5</option>
-                        <option value="2">6-10</option>
-                        <option value="4">11-15</option>
-                        <option value="6">15-20</option>
-                        <option value="8">20-25</option>
-                        <option value="10">26+</option>
-                    </select>
-                    <label>Wins</label>
-                    <input id="winsB" type="number">
-                    <label>Losses</label>
-                    <input id="lossesB" type="number">
-                    <label>Last 3 Fight Streak</label>
-                    <select id="streakB">
-                        <option value="" disabled selected>...</option>
-                        <option value="2">L L L</option>
-                        <option value="5">L L W</option>
-                        <option value="5.5">L W L</option>
-                        <option value="7">L W W</option>
-                        <option value="6">W L L</option>
-                        <option value="7.5">W L W</option>
-                        <option value="8">W W L</option>
-                        <option value="10">W W W</option>
-                    </select>
-                    <!-- PrimeAGE -->
-                    <!-- Primeage End -->
-                    <label>Last time active</label>
-                    <select id="activeB">
-                        <option value="" disabled selected>...</option>
-                        <option value="10">0-4 months</option>
-                        <option value="8.5">5-7 months</option>
-                        <option value="7">8-10 months</option>
-                        <option value="4">11-13 months</option>
-                        <option value="3">14 months +</option>
-                    </select>
-                    <label>Reach</label>
-                    <select id="reachB">
-                        <option value="" disabled selected>...</option>
-                        <option value="6">9"+ Advantage</option>
-                        <option value="5.8">7-8" Advantage</option>
-                        <option value="5.6">5-6" Advantage</option>
-                        <option value="5.4">3-4" Advantage</option>
-                        <option value="5.1">0-2" Advantage</option>
-                        <option value="5">Equal</option>
-                        <option value="4.9">0-2" Disadvantage</option>
-                        <option value="4.6">3-4" Disadvantage</option>
-                        <option value="4.4">5-6" Disadvantage</option>
-                        <option value="4.2">7-8" Disadvantage</option>
-                        <option value="4">9"+ Disadvantage</option>
-                    </select>
-                    <label>Striking Accuracy</label>
-                    <input id="strikeB" type="number">
-                    <label>Takedown Accuracy</label>
-                    <input id="grapB" type="number">
-                    <p>Best Odds B</p>
-                    <div class="bestlineB"></div>
-                    <div class="percentageB"></div>
-                    <small id="smallB"></small>
-                </form>
+            <div class="displays">
+                <button id="blast">Calc</button>
+                <button id="reset">Reset</button>
             </div>
         </div>
-        <div class="displays">
-            <button id="blast">Calculate</button>
-        </div>
-    </div>
+
+    </header>
     <script src="script.js"></script>
 </body>
 
