@@ -1,6 +1,12 @@
 const button = document.getElementById('blast')
 button.addEventListener('click', getValue)
 
+const reset = document.getElementById('reset')
+reset.addEventListener('click', resetValues)
+
+function resetValues() {
+    location.reload();
+}
 //======================================//
 //Fighter A //
 
